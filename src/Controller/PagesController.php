@@ -1,42 +1,33 @@
 <?php
 
-// namespace et use : pas encore expliqués
-// TODO: explication namespace et use
-// TODO: re-explication du MVC (que Denis, ce fainéant, n'a pas expliqué)
 namespace App\Controller;
+
+
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
-// je créé une classe PagesController
-// attention, cette classe doit avoir le même nom que le fichier qui la contient (majuscules etc)
-// si la classe et le fichier n'ont pas le même nom, on obtient cette erreur :
-// "Cannot declare class App\Controller\PageController, because the name is already in use"
-// Le nom de la classe, dans un controleur, est suffixée par le mot "Controller"
 class PagesController
 {
 
     /**
-     * On a du code dans une commentaire : c'est un annotation
-     * cette annotation permet de créer une route : c'est à dire, une nouvelle URL sur notre site
-     * La classe Route est appelée dans l'annotation, avec en premier parametre l'url de la route
-     * à créer et en second parametre le nom de la route (qui doit être unique)
-     * @Route("/contact", name="page_contact")
+     * @Route("/age", name="page_age")
+     *
+     * Je récupère une instance de la classe Request que
+     * je demande à symfony de mettre dans une variable
+     *
+     * La classe Request de Symfony me permet de récupérer
+     * toutes les infos possibles sur l'utilisateur (variables GET, POST,
+     * adresse IP, cookies etc)
      */
-    // on créé une méthode contact qui sera appelée quand l'url "/contact" (donc la route associée)
-    // est appelée. Elle est appelée automatiquement car la route est définie au dessus de la méthode
-    public function contact()
+    public function age(Request $request)
     {
-        // j'execute un var_dump pour afficher du contenu sur ma page
-        var_dump('affichage de la page contact');
+        // la classe Request de Symfony possède des méthodes et
+        // des propriétés pour récupérer les données de la requête
+        // pour les variables GET, c'est la propriété query qu'il
+        // faut utiliser
+        $age = $request->query->get('age');
+
+        var_dump($age);
         die;
     }
-
-    /**
-     * @Route("/blog", name="page_blog")
-     */
-    public function blog()
-    {
-        var_dump('hello blog');
-        die;
-    }
-
 }
