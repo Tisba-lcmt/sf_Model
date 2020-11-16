@@ -4,6 +4,7 @@ namespace App\Controller;
 
 
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class PagesController
@@ -27,7 +28,15 @@ class PagesController
         // faut utiliser
         $age = $request->query->get('age');
 
-        var_dump($age);
-        die;
+        //$request->query = permet de récupérer les parametres de requete GET
+        // $request->request = permet de récuperer les données envoyées en POST
+
+        // Je créé une instance de la classe Response
+        // qui a pour contenu une chaine de caractères (avec un h1 etc)
+        // Je stocke le resultat dans une variable $response
+        $response = new Response('<h1>Hello David</h1>');
+
+        // je retourne la variable $response qui contient ma Réponse HTTP
+        return $response;
     }
 }

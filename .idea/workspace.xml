@@ -176,7 +176,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605267004684</updated>
       <workItem from="1605267006325" duration="7145000" />
-      <workItem from="1605518376761" duration="1060000" />
+      <workItem from="1605518376761" duration="3220000" />
+      <workItem from="1605539981031" duration="905000" />
     </task>
     <servers />
   </component>
@@ -193,6 +194,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="48" key="NewPhpClassDialog" timestamp="1605278004267">
