@@ -3,12 +3,23 @@
 namespace App\Controller;
 
 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class PagesController
+// J'étends la classe AbstractController de Symfony
+// pour bénéficier des méthodes qui sont définies à l'intérieur
+class PagesController extends AbstractController
 {
+
+    /**
+     * @Route("/", name="home")
+     */
+    public function home()
+    {
+        return new Response("Page d'accueil");
+    }
 
     /**
      * @Route("/age", name="page_age")
@@ -71,4 +82,27 @@ class PagesController
         // je retourne ma réponse
         return $response;
     }
+
+
+    /**
+     * @Route("/form-process", name="form_process")
+     */
+    public function processForm()
+    {
+        // variable à modifier pour simuler l'envoi d'un formulaire
+        $isFormSubmitted = true;
+
+        // si le formulaire n'a pas été envoyé
+        if (!$isFormSubmitted) {
+            return new Response('Merci de remplir le formulaire');
+        } else {
+            // j'utilise la méthode redirectToRoute
+            // qui est définie non pas dans la classe actuelle,
+            // mais dans la classe AbstractController que la classe actuelle étend
+            // cette méthode permet de faire une redirection vers une page
+            // en utilisant le nom de la route
+            return $this->redirectToRoute("home");
+        }
+    }
+
 }
