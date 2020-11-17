@@ -42,19 +42,16 @@ class PagesController
 
 
     /**
-     * @Route("/article", name="article_show")
+     * je créé une route avec dans l'url une "wildcard"
+     * qui sera remplie par l'utilisateur après /article/ dans l'url
+     * @Route("/article/{id}", name="article_show")
      *
-     * je passe en parametre de la méthode de controleur
-     * la classe Request associée à la variable Request
-     * pour utiliser le mécanisme d'autowire de Symfony
-     * cad : Symfony va instancier automatiquement la classe Request
-     * dans la variable $request
+     * je mets en parametre de la méthode une variable $id (dont le nom
+     * correspond à la wildcard créée) pour demander à Symfony
+     * de mettre la valeur de la wildcard dans la variable
      */
-    public function articleShow(Request $request)
+    public function articleShow($id)
     {
-        // j"utilise la classe Request pour récupérer le parametre d'url id
-        $idArticle = $request->query->get('id');
-
         // simulation d'une requête en BDD qui récupère tous les articles
         // c'est un array (tableau) à index numérique
         $articles = [
@@ -67,8 +64,9 @@ class PagesController
         ];
 
         // je créé une réponse HTTP contenant la valeur de l'article
-        // qui correspond à l'id passé en URL
-        $response = new Response('<h1>'.$articles[$idArticle].'</h1>');
+        // qui correspond à la wildcard id passée en URL
+
+        $response = new Response('<h1>'.$articles[$id].'</h1>');
 
         // je retourne ma réponse
         return $response;
