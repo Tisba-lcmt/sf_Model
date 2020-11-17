@@ -52,57 +52,6 @@ class PagesController extends AbstractController
     }
 
 
-    /**
-     * je créé une route avec dans l'url une "wildcard"
-     * qui sera remplie par l'utilisateur après /article/ dans l'url
-     * @Route("/article/{id}", name="article_show")
-     *
-     * je mets en parametre de la méthode une variable $id (dont le nom
-     * correspond à la wildcard créée) pour demander à Symfony
-     * de mettre la valeur de la wildcard dans la variable
-     */
-    public function articleShow($id)
-    {
-        // simulation d'une requête en BDD qui récupère tous les articles
-        // c'est un array (tableau) à index numérique
-        $articles = [
-            1 => 'Article 1',
-            2 => "Article 2",
-            3 => "Article 3",
-            4 => 'Article 4',
-            5 => "Article 5",
-            6 => "Article 6",
-        ];
 
-        // je créé une réponse HTTP contenant la valeur de l'article
-        // qui correspond à la wildcard id passée en URL
-
-        $response = new Response('<h1>'.$articles[$id].'</h1>');
-
-        // je retourne ma réponse
-        return $response;
-    }
-
-
-    /**
-     * @Route("/form-process", name="form_process")
-     */
-    public function processForm()
-    {
-        // variable à modifier pour simuler l'envoi d'un formulaire
-        $isFormSubmitted = true;
-
-        // si le formulaire n'a pas été envoyé
-        if (!$isFormSubmitted) {
-            return new Response('Merci de remplir le formulaire');
-        } else {
-            // j'utilise la méthode redirectToRoute
-            // qui est définie non pas dans la classe actuelle,
-            // mais dans la classe AbstractController que la classe actuelle étend
-            // cette méthode permet de faire une redirection vers une page
-            // en utilisant le nom de la route
-            return $this->redirectToRoute("home");
-        }
-    }
 
 }

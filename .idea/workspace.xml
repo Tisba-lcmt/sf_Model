@@ -22,6 +22,7 @@
     <list default="true" id="9927be5a-dcd7-41c8-a0ac-4d549b70bba2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +179,7 @@
       <workItem from="1605267006325" duration="7145000" />
       <workItem from="1605518376761" duration="3220000" />
       <workItem from="1605539981031" duration="1629000" />
-      <workItem from="1605602816783" duration="6300000" />
+      <workItem from="1605602816783" duration="8339000" />
     </task>
     <servers />
   </component>
@@ -198,10 +199,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="348" y="48" key="NewPhpClassDialog" timestamp="1605278004267">
-      <screen x="0" y="23" width="1280" height="623" />
+    <state x="379" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605627851062">
+      <screen x="0" y="23" width="1280" height="626" />
+    </state>
+    <state x="379" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1280.626@0.23.1280.626" timestamp="1605627851062" />
+    <state x="348" y="48" key="NewPhpClassDialog" timestamp="1605627843680">
+      <screen x="0" y="23" width="1280" height="626" />
     </state>
     <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.623@0.23.1280.623" timestamp="1605278004267" />
+    <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.626@0.23.1280.626" timestamp="1605627843680" />
     <state x="306" y="23" width="670" height="676" key="search.everywhere.popup" timestamp="1605282886925">
       <screen x="0" y="23" width="1280" height="620" />
     </state>
