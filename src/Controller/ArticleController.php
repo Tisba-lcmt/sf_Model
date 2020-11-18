@@ -32,10 +32,22 @@ class ArticleController extends AbstractController
             6 => "Article 6",
         ];
 
+        // je récupère l'article dans l'array $articles
+        // en fonction de l'id passé en url
+        $article = $articles[$id];
+
         // j'utilise la méthode render (issue de l'AbstractController)
         // qui va récupérer un fichier twig (dans le dossier templates)
         // puis le compiler en HTML et le renvoyer en tant que réponse HTTP
-        return $this->render('article.html.twig');
+
+        // je passe en second parametre de la méthode render
+        // un tableau (array) qui contient toutes les variables
+        // que je veux utiliser dans twig
+        // Tant que je n'envoie pas les variables au fichier twig
+        // je ne peux pas les appeler car c'est un fichier séparé
+        return $this->render('article.html.twig', [
+            'article' => $article
+        ]);
     }
 
 
