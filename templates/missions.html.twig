@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+
+        <ul>
+            {# pour chaque mission contenue dans le tableau de mission
+                je créé une variable temporaire "mission" qui contiendra
+                la valeur de la mission de chaque tour de boucle
+                Et je l'affiche dans une balise <li>
+            #}
+            {% for mission in missions %}
+                <li>{{ mission }}</li>
+            {% endfor %}
+        </ul>
+
+    </main>
+
+</body>
+</html>
