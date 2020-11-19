@@ -21,7 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9927be5a-dcd7-41c8-a0ac-4d549b70bba2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/agent.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/agent.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/agents.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/agents.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/missions.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/missions.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +187,7 @@
       <workItem from="1605688367804" duration="2759000" />
       <workItem from="1605695976808" duration="1458000" />
       <workItem from="1605704964479" duration="5133000" />
-      <workItem from="1605775880801" duration="1770000" />
+      <workItem from="1605775880801" duration="6921000" />
     </task>
     <servers />
   </component>
@@ -224,10 +229,11 @@
       <screen x="0" y="23" width="1280" height="623" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.1280.623@0.23.1280.623" timestamp="1605777268022" />
-    <state x="306" y="23" width="670" height="680" key="search.everywhere.popup" timestamp="1605776475087">
-      <screen x="0" y="23" width="1280" height="623" />
+    <state x="306" y="23" width="670" height="686" key="search.everywhere.popup" timestamp="1605792785855">
+      <screen x="0" y="23" width="1280" height="628" />
     </state>
     <state x="306" y="23" width="670" height="676" key="search.everywhere.popup/0.23.1280.620@0.23.1280.620" timestamp="1605282886925" />
     <state x="306" y="23" width="670" height="680" key="search.everywhere.popup/0.23.1280.623@0.23.1280.623" timestamp="1605776475087" />
+    <state x="306" y="23" width="670" height="686" key="search.everywhere.popup/0.23.1280.628@0.23.1280.628" timestamp="1605792785855" />
   </component>
 </project>

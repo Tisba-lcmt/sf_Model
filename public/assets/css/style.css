@@ -1,0 +1,8 @@
+.agents {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.agent {
+    width: 33%;
+}
