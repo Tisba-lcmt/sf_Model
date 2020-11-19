@@ -9,35 +9,102 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProfileController extends AbstractController
 {
-
     /**
-     * @Route("/profile", name="profile_show")
+     * @Route("/agent/{id}", name="agent_show")
      */
-    public function profileShow()
+    public function agentShow($id)
     {
-        $profile = [
-            "firstname" => "Flantier",
-            "name" => "Noel",
-            "age" => 40,
-            "job" => "secret agent",
-            "active" => false
+        $agents = [
+            1 => [
+                "id" => 1,
+                "lastName" => "Robert",
+                "firstName" => "David",
+                "age" => 30,
+                "published" => true
+            ],
+            2 => [
+                "id" => 2,
+                "lastName" => "Labaste",
+                "firstName" => "Denis",
+                "age" => 29,
+                "published" => true
+            ],
+            3 => [
+                "id" => 3,
+                "lastName" => "Rozand",
+                "firstName" => "Mathieu",
+                "age" => 31,
+                "published" => false
+            ],
+            4 => [
+                "id" => 4,
+                "lastName" => "Despert",
+                "firstName" => "Yoann",
+                "age" => 33,
+                "published" => true
+            ],
+            5 => [
+                "id" => 5,
+                "lastName" => "Dorignac",
+                "firstName" => "Loic",
+                "age" => 34,
+                "published" => false
+            ]
         ];
 
-        return $this->render('profile.html.twig', [
-            'profile' => $profile
+        $agent = $agents[$id];
+
+        return $this->render('agent.html.twig', [
+            'agent' => $agent
         ]);
     }
 
     /**
-     * @Route("/missions", name="missions")
+     * @Route("/agents", name="agents_list")
      */
-    public function missions()
+    public function agentsList()
     {
-        // je créé un tableau qui pourra être bouclé
-        $missions = ['Brésil', 'Egypte', 'Afrique Noire'];
 
-        return $this->render('missions.html.twig', [
-           'missions' => $missions
+        $agents = [
+            1 => [
+                "id" => 1,
+                "lastName" => "Robert",
+                "firstName" => "David",
+                "age" => 30,
+                "published" => true
+            ],
+            2 => [
+                "id" => 2,
+                "lastName" => "Labaste",
+                "firstName" => "Denis",
+                "age" => 29,
+                "published" => true
+            ],
+            3 => [
+                "id" => 3,
+                "lastName" => "Rozand",
+                "firstName" => "Mathieu",
+                "age" => 31,
+                "published" => false
+            ],
+            4 => [
+                "id" => 4,
+                "lastName" => "Despert",
+                "firstName" => "Yoann",
+                "age" => 33,
+                "published" => true
+            ],
+            5 => [
+                "id" => 5,
+                "lastName" => "Dorignac",
+                "firstName" => "Loic",
+                "age" => 34,
+                "published" => false
+            ]
+        ];
+
+        return $this->render('agents.html.twig', [
+           'agents' => $agents
         ]);
     }
 

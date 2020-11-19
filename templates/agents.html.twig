@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+
+        {% for agent in agents %}
+
+            {% if agent.published %}
+
+                <p>
+                    {# je créé un lien avec la fonction path
+                        qui prend en premier parametre le nom de la route vers laquelle je veux faire le lien
+                        et en second parametre les valeurs des wildcard de la route concernée
+                    #}
+                    <a href="{{ path('agent_show', {'id': agent.id}) }}">{{ agent.firstName }} {{ agent.lastName }} / {{ agent.id }}</a>
+                </p>
+
+            {% endif %}
+
+        {% endfor %}
+
+    </main>
+
+</body>
+</html>

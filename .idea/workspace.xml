@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9927be5a-dcd7-41c8-a0ac-4d549b70bba2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProfileController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +165,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -181,7 +181,8 @@
       <workItem from="1605602816783" duration="9201000" />
       <workItem from="1605688367804" duration="2759000" />
       <workItem from="1605695976808" duration="1458000" />
-      <workItem from="1605704964479" duration="1815000" />
+      <workItem from="1605704964479" duration="5133000" />
+      <workItem from="1605775880801" duration="1770000" />
     </task>
     <servers />
   </component>
@@ -201,6 +202,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="360" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605712442664">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="360" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1605712442664" />
     <state x="379" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605627851062">
       <screen x="0" y="23" width="1280" height="626" />
     </state>
@@ -210,13 +215,19 @@
     </state>
     <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.623@0.23.1280.623" timestamp="1605278004267" />
     <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.626@0.23.1280.626" timestamp="1605706626689" />
-    <state x="182" y="23" key="SettingsEditor" timestamp="1605694704321">
+    <state x="182" y="23" key="SettingsEditor" timestamp="1605776190170">
       <screen x="0" y="23" width="1280" height="623" />
     </state>
-    <state x="182" y="23" key="SettingsEditor/0.23.1280.623@0.23.1280.623" timestamp="1605694704321" />
-    <state x="306" y="23" width="670" height="676" key="search.everywhere.popup" timestamp="1605282886925">
-      <screen x="0" y="23" width="1280" height="620" />
+    <state x="182" y="23" key="SettingsEditor/0.23.1280.623@0.23.1280.623" timestamp="1605776190170" />
+    <state x="255" y="23" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1605712983418" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1605777268022">
+      <screen x="0" y="23" width="1280" height="623" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.23.1280.623@0.23.1280.623" timestamp="1605777268022" />
+    <state x="306" y="23" width="670" height="680" key="search.everywhere.popup" timestamp="1605776475087">
+      <screen x="0" y="23" width="1280" height="623" />
     </state>
     <state x="306" y="23" width="670" height="676" key="search.everywhere.popup/0.23.1280.620@0.23.1280.620" timestamp="1605282886925" />
+    <state x="306" y="23" width="670" height="680" key="search.everywhere.popup/0.23.1280.623@0.23.1280.623" timestamp="1605776475087" />
   </component>
 </project>
