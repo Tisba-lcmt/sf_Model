@@ -21,12 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9927be5a-dcd7-41c8-a0ac-4d549b70bba2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PagesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/agent.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/agent.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/agents.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/agents.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/missions.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/missions.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProfileController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +167,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -187,7 +187,9 @@
       <workItem from="1605688367804" duration="2759000" />
       <workItem from="1605695976808" duration="1458000" />
       <workItem from="1605704964479" duration="5133000" />
-      <workItem from="1605775880801" duration="6921000" />
+      <workItem from="1605775880801" duration="7888000" />
+      <workItem from="1606121879820" duration="4838000" />
+      <workItem from="1606134918401" duration="323000" />
     </task>
     <servers />
   </component>
@@ -215,20 +217,21 @@
       <screen x="0" y="23" width="1280" height="626" />
     </state>
     <state x="379" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1280.626@0.23.1280.626" timestamp="1605627851062" />
-    <state x="348" y="48" key="NewPhpClassDialog" timestamp="1605706626689">
+    <state x="348" y="48" key="NewPhpClassDialog" timestamp="1606129558119">
       <screen x="0" y="23" width="1280" height="626" />
     </state>
     <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.623@0.23.1280.623" timestamp="1605278004267" />
-    <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.626@0.23.1280.626" timestamp="1605706626689" />
+    <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.626@0.23.1280.626" timestamp="1606129558119" />
     <state x="182" y="23" key="SettingsEditor" timestamp="1605776190170">
       <screen x="0" y="23" width="1280" height="623" />
     </state>
     <state x="182" y="23" key="SettingsEditor/0.23.1280.623@0.23.1280.623" timestamp="1605776190170" />
     <state x="255" y="23" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1605712983418" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1605777268022">
-      <screen x="0" y="23" width="1280" height="623" />
+    <state width="500" height="449" key="SwitcherDM" timestamp="1605793127420">
+      <screen x="0" y="23" width="1280" height="628" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.1280.623@0.23.1280.623" timestamp="1605777268022" />
+    <state width="500" height="449" key="SwitcherDM/0.23.1280.628@0.23.1280.628" timestamp="1605793127420" />
     <state x="306" y="23" width="670" height="686" key="search.everywhere.popup" timestamp="1605792785855">
       <screen x="0" y="23" width="1280" height="628" />
     </state>
