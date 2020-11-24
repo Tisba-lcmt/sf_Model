@@ -21,21 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9927be5a-dcd7-41c8-a0ac-4d549b70bba2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201123111622.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201123112103.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201123112316.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201123112844.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PagesController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProfileController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/agent.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/agents.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/missions.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profile.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +190,8 @@
       <workItem from="1605775880801" duration="7888000" />
       <workItem from="1606121879820" duration="4838000" />
       <workItem from="1606134918401" duration="2577000" />
-      <workItem from="1606207883455" duration="1508000" />
+      <workItem from="1606207883455" duration="2752000" />
+      <workItem from="1606221247297" duration="994000" />
     </task>
     <servers />
   </component>
