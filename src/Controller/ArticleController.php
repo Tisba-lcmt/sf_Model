@@ -118,4 +118,27 @@ class ArticleController extends AbstractController
         return $this->render('article/update_static.html.twig');
     }
 
+
+    /**
+     * @Route("/article/delete/{id}", name="article_delete")
+     *
+     * je récupère la wildcard de l'url dans le parametre $id
+     * je demande à SF d'instancier les classes ArticleRepository et
+     * EntityManager (autowire)
+     */
+    public function deleteArticle($id, ArticleRepository $articleRepository, EntityManagerInterface $entityManager)
+    {
+        // je récupère en bdd l'article dont l'id correspond à celui passé en url (wildcard)
+        $article = $articleRepository->find($id);
+
+        // si cet article existe en bdd (donc que la valeut d'$article n'est pas "null"
+        // alors je le supprime avec la méthode remove de l'entityManager
+        if (!is_null($article)) {
+            $entityManager->remove($article);
+            $entityManager->flush();
+        }
+
+        return $this->render("article/delete_article.html.twig");
+    }
+
 }
