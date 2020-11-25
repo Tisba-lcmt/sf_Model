@@ -22,6 +22,7 @@
     <list default="true" id="9927be5a-dcd7-41c8-a0ac-4d549b70bba2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +192,10 @@
       <workItem from="1606121879820" duration="4838000" />
       <workItem from="1606134918401" duration="2577000" />
       <workItem from="1606207883455" duration="2752000" />
-      <workItem from="1606221247297" duration="994000" />
+      <workItem from="1606221247297" duration="2146000" />
+      <workItem from="1606243224082" duration="6000" />
+      <workItem from="1606243790063" duration="5000" />
+      <workItem from="1606294769150" duration="2248000" />
     </task>
     <servers />
   </component>
@@ -211,10 +215,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="360" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605712442664">
-      <screen x="0" y="23" width="1792" height="1017" />
+    <state x="209" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606296978608">
+      <screen x="0" y="23" width="1280" height="623" />
     </state>
+    <state x="209" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.623@0.23.1280.623" timestamp="1606296978608" />
     <state x="360" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1605712442664" />
+    <state x="409" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1606294937681">
+      <screen x="0" y="23" width="1280" height="623" />
+    </state>
+    <state x="409" y="49" key="#com.intellij.ide.util.MemberChooser/0.23.1280.623@0.23.1280.623" timestamp="1606294937681" />
     <state x="379" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605627851062">
       <screen x="0" y="23" width="1280" height="626" />
     </state>
@@ -224,15 +233,15 @@
     </state>
     <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.623@0.23.1280.623" timestamp="1606208954630" />
     <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.626@0.23.1280.626" timestamp="1606129558119" />
-    <state x="182" y="23" key="SettingsEditor" timestamp="1605776190170">
+    <state x="182" y="23" key="SettingsEditor" timestamp="1606294819992">
       <screen x="0" y="23" width="1280" height="623" />
     </state>
-    <state x="182" y="23" key="SettingsEditor/0.23.1280.623@0.23.1280.623" timestamp="1605776190170" />
+    <state x="182" y="23" key="SettingsEditor/0.23.1280.623@0.23.1280.623" timestamp="1606294819992" />
     <state x="255" y="23" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1605712983418" />
-    <state width="500" height="449" key="SwitcherDM" timestamp="1605793127420">
-      <screen x="0" y="23" width="1280" height="628" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1606296061468">
+      <screen x="0" y="23" width="1280" height="623" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.1280.623@0.23.1280.623" timestamp="1605777268022" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1280.623@0.23.1280.623" timestamp="1606296061468" />
     <state width="500" height="449" key="SwitcherDM/0.23.1280.628@0.23.1280.628" timestamp="1605793127420" />
     <state x="306" y="23" width="670" height="686" key="search.everywhere.popup" timestamp="1605792785855">
       <screen x="0" y="23" width="1280" height="628" />

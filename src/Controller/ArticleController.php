@@ -4,7 +4,9 @@
 namespace App\Controller;
 
 
+use App\Entity\Article;
 use App\Repository\ArticleRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -33,7 +35,7 @@ class ArticleController extends AbstractController
     /**
      * je créé une url avec une wildcard "id"
      * qui contiendra l'id d'un article
-     * @Route("/article/{id}", name="article_show")
+     * @Route("/article/show/{id}", name="article_show")
      *
      * en parametre de la méthode, je récupère la valeur de la wildcard id
      * et je demande en plus à symfony d'instancier pour moi
@@ -47,8 +49,44 @@ class ArticleController extends AbstractController
         // et retrouver l'article dont l'id correspond à l'id passé en URL
         $article = $articleRepository->find($id);
 
-        
         dump($article); die;
+    }
+
+
+    /**
+     * @Route("/article/insert-static", name="article_insert_static")
+     *
+     * je demande à Symfony d'instancier pour moi la classe EntityManager (EntityManagerInterface)
+     * dans une variable $entityManger. Cette classe permet de faire les requêtes INSERT, UPDATE et DELETE
+     *
+     */
+    public function insertStaticArticle(EntityManagerInterface $entityManager)
+    {
+
+        // j'instancie la classe d'entité Article
+        // pour pouvoir définir les valeurs de ses propriétés (et donc créer un nouvel enregistrement
+        // dans la table article en BDD)
+        $article = new Article();
+
+        // Je définis les valeurs des propriétés de l'entité Article
+        // qui seront les valeurs des colonnes correspondantes en BDD
+        $article->setTitle("Titre de mon article");
+        $article->setContent("contenu de mon article");
+        $article->setImage("https://www.lapiscine.pro/wp-content/uploads/2017/05/LaPiscine_2017_BDX.jpg");
+        $article->setCreationDate(new \DateTime());
+        $article->setPublicationDate(new \DateTime());
+        $article->setIsPublished(true);
+
+        // j'utilise la méthode persist de l'EntityManager pour "pré-sauvegarder" mon entité (un peu comme un commit
+        // dans Git)
+        $entityManager->persist($article);
+
+        // j'utilise la méthode flush de l'EntityManager pour insérer en BDD toutes les entités
+        // "pré-sauvegardées" (persistées)
+        $entityManager->flush();
+
+        // j'affiche le rendu d'un fichier twig
+        return $this->render('article/insert_static.html.twig');
     }
 
 }

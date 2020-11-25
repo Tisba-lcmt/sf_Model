@@ -47,80 +47,112 @@ class Article
      */
     private $isPublished;
 
-    public function getId(): ?int
+    /**
+     * @return mixed
+     */
+    public function getId()
     {
         return $this->id;
     }
 
-    public function getTitle(): ?string
+
+    /**
+     * @return mixed
+     */
+    public function getTitle()
     {
         return $this->title;
     }
 
-    public function setTitle(string $title): self
+    /**
+     * @param mixed $title
+     */
+    public function setTitle($title): void
     {
         $this->title = $title;
-
-        return $this;
     }
 
-    public function getContent(): ?string
+    /**
+     * @return mixed
+     */
+    public function getContent()
     {
         return $this->content;
     }
 
-    public function setContent(?string $content): self
+    /**
+     * @param mixed $content
+     */
+    public function setContent($content): void
     {
         $this->content = $content;
-
-        return $this;
     }
 
-    public function getImage(): ?string
+    /**
+     * @return mixed
+     */
+    public function getImage()
     {
         return $this->image;
     }
 
-    public function setImage(?string $image): self
+    /**
+     * @param mixed $image
+     */
+    public function setImage($image): void
     {
         $this->image = $image;
-
-        return $this;
     }
 
-    public function getPublicationDate(): ?\DateTimeInterface
+    /**
+     * @return mixed
+     */
+    public function getPublicationDate()
     {
         return $this->publicationDate;
     }
 
-    public function setPublicationDate(?\DateTimeInterface $publicationDate): self
+    /**
+     * @param mixed $publicationDate
+     */
+    public function setPublicationDate($publicationDate): void
     {
         $this->publicationDate = $publicationDate;
-
-        return $this;
     }
 
-    public function getCreationDate(): ?\DateTimeInterface
+    /**
+     * @return mixed
+     */
+    public function getCreationDate()
     {
         return $this->creationDate;
     }
 
-    public function setCreationDate(?\DateTimeInterface $creationDate): self
+    /**
+     * @param mixed $creationDate
+     */
+    public function setCreationDate($creationDate): void
     {
         $this->creationDate = $creationDate;
-
-        return $this;
     }
 
-    public function getIsPublished(): ?bool
+    /**
+     * @return mixed
+     */
+    public function getIsPublished()
     {
         return $this->isPublished;
     }
 
-    public function setIsPublished(?bool $isPublished): self
+    /**
+     * @param mixed $isPublished
+     */
+    public function setIsPublished($isPublished): void
     {
         $this->isPublished = $isPublished;
-
-        return $this;
     }
+
+
+
+
 }
