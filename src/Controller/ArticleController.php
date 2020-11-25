@@ -18,6 +18,8 @@ class ArticleController extends AbstractController
      */
     public function articleList(ArticleRepository $articleRepository)
     {
+
+
         // récupérer tous les articles de ma table article
         // pour ça, j'utilise la classe générée automatiquement par SF
         // qui s'appelle ArticleRepository
@@ -25,8 +27,6 @@ class ArticleController extends AbstractController
         // la méthode findAll() de la classe ArticleRepository me permet
         // de récupérer tous les éléments de la table Article
         $articles = $articleRepository->findAll();
-
-        dump($articles); die;
 
         // les afficher dans un fichier twig
     }
@@ -87,6 +87,35 @@ class ArticleController extends AbstractController
 
         // j'affiche le rendu d'un fichier twig
         return $this->render('article/insert_static.html.twig');
+    }
+
+
+    /**
+     * @Route("/article/update-static", name="article_modify_static")
+     *
+     * J'ai besoin de récupérer un article dans la table article donc je demande
+     * à SF d'instancier pour moi l'ArticleRepository
+     * J'ai aussi besoin de re-enregistrer cet article donc je demande à SF
+     * d'instancier L'entityManagerInterface (EntityManager)
+     */
+    public function updateStaticArticle(ArticleRepository $articleRepository, EntityManagerInterface $entityManager)
+    {
+        // je récupère l'article a modifier avec la méthode find du repository
+        // La méthode find me renvoie une entité Article qui contient toutes les données
+        // de l'article (titre, content etc)
+        $article = $articleRepository->find(1);
+
+        // Vu que j'ai récupéré une entité, je peux utiliser les setters
+        // pour modifier les valeurs que je veux modifier
+        $article->setTitle("titre modifié en dur");
+
+        // une fois que j'ai modifié mon entité Article
+        // je la re-enregistre avec l'entityManager et les méthodes
+        // persist puis flush
+        $entityManager->persist($article);
+        $entityManager->flush();
+
+        return $this->render('article/update_static.html.twig');
     }
 
 }
