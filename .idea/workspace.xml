@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9927be5a-dcd7-41c8-a0ac-4d549b70bba2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/article/admin/update.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/delete_article.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/insert.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/admin/insert.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/list_articles.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/admin/list_articles.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +162,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/article/front" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -170,6 +173,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/article/front" />
+      <recent name="$PROJECT_DIR$/templates/article/admin" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -196,7 +201,8 @@
       <workItem from="1606243224082" duration="6000" />
       <workItem from="1606243790063" duration="5000" />
       <workItem from="1606294769150" duration="9387000" />
-      <workItem from="1606380078515" duration="7714000" />
+      <workItem from="1606380078515" duration="7910000" />
+      <workItem from="1606400732706" duration="2434000" />
     </task>
     <servers />
   </component>
@@ -229,11 +235,12 @@
       <screen x="0" y="23" width="1280" height="626" />
     </state>
     <state x="379" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1280.626@0.23.1280.626" timestamp="1605627851062" />
-    <state x="487" y="64" key="NewPhpClassDialog" timestamp="1606300972438">
-      <screen x="0" y="23" width="1792" height="1017" />
+    <state x="348" y="48" key="NewPhpClassDialog" timestamp="1606406907127">
+      <screen x="0" y="23" width="1280" height="630" />
     </state>
     <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.623@0.23.1280.623" timestamp="1606208954630" />
     <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.626@0.23.1280.626" timestamp="1606129558119" />
+    <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.630@0.23.1280.630" timestamp="1606406907127" />
     <state x="487" y="64" key="NewPhpClassDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1606300972438" />
     <state x="500" y="44" key="SettingsEditor" timestamp="1606384472225">
       <screen x="0" y="23" width="1792" height="1017" />
