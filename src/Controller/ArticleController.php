@@ -29,6 +29,10 @@ class ArticleController extends AbstractController
         $articles = $articleRepository->findAll();
 
         // les afficher dans un fichier twig
+
+        return $this->render('article/list_articles.html.twig', [
+            'articles' => $articles
+        ]);
     }
 
 
@@ -136,9 +140,19 @@ class ArticleController extends AbstractController
         if (!is_null($article)) {
             $entityManager->remove($article);
             $entityManager->flush();
+
+            // si j'ai bien supprimé mon article
+            // j'ajoute un message flash de type "succès"
+            // et je lui définis un message
+            $this->addFlash(
+                "success",
+                "GRAND SUCCES !!!"
+            );
         }
 
-        return $this->render("article/delete_article.html.twig");
+        // je fais une redirection vers la page de liste d'article
+        // une fois la suppression faite
+        return $this->redirectToRoute("article_list");
     }
 
 }

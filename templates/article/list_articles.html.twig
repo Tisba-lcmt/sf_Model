@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+        {# app est une variable globale définie dans twig
+            Elle est dispo dans tous les fichiers twig
+            et contient des informations un peu générales : les messages flashs, les infos
+            de l'utilisateur connecté (si y'en a un) etc
+        #}
+        {% for message in app.flashes('success') %}
+            <p>{{ message }}</p>
+        {% endfor %}
+
+    </header>
+
+    <body>
+
+
+        {% for article in articles %}
+            <article>
+                <h2>{{ article.title }}</h2>
+                <a href="{{ path('article_delete', {'id': article.id}) }}">Supprimer l'article</a>
+            </article>
+        {% endfor %}
+
+    </body>
+
+</body>
+</html>

@@ -165,7 +165,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -194,7 +194,8 @@
       <workItem from="1606221247297" duration="2146000" />
       <workItem from="1606243224082" duration="6000" />
       <workItem from="1606243790063" duration="5000" />
-      <workItem from="1606294769150" duration="8360000" />
+      <workItem from="1606294769150" duration="9387000" />
+      <workItem from="1606380078515" duration="1379000" />
     </task>
     <servers />
   </component>
@@ -233,10 +234,11 @@
     <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.623@0.23.1280.623" timestamp="1606208954630" />
     <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.626@0.23.1280.626" timestamp="1606129558119" />
     <state x="487" y="64" key="NewPhpClassDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1606300972438" />
-    <state x="182" y="23" key="SettingsEditor" timestamp="1606294819992">
-      <screen x="0" y="23" width="1280" height="623" />
+    <state x="182" y="23" key="SettingsEditor" timestamp="1606380499633">
+      <screen x="0" y="23" width="1280" height="626" />
     </state>
     <state x="182" y="23" key="SettingsEditor/0.23.1280.623@0.23.1280.623" timestamp="1606294819992" />
+    <state x="182" y="23" key="SettingsEditor/0.23.1280.626@0.23.1280.626" timestamp="1606380499633" />
     <state x="255" y="23" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1605712983418" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1606296061468">
       <screen x="0" y="23" width="1280" height="623" />
