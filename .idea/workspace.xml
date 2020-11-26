@@ -22,8 +22,7 @@
     <list default="true" id="9927be5a-dcd7-41c8-a0ac-4d549b70bba2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/insert_static.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/update_static.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +196,7 @@
       <workItem from="1606243224082" duration="6000" />
       <workItem from="1606243790063" duration="5000" />
       <workItem from="1606294769150" duration="9387000" />
-      <workItem from="1606380078515" duration="4969000" />
+      <workItem from="1606380078515" duration="7714000" />
     </task>
     <servers />
   </component>
