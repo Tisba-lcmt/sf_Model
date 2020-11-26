@@ -5,6 +5,7 @@ namespace App\Controller;
 
 
 use App\Entity\Article;
+use App\Form\ArticleType;
 use App\Repository\ArticleRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -56,72 +57,27 @@ class ArticleController extends AbstractController
         dump($article); die;
     }
 
-
     /**
-     * @Route("/article/insert-static", name="article_insert_static")
-     *
-     * je demande à Symfony d'instancier pour moi la classe EntityManager (EntityManagerInterface)
-     * dans une variable $entityManger. Cette classe permet de faire les requêtes INSERT, UPDATE et DELETE
-     *
+     * @Route("/article/insert", name="article_insert")
      */
-    public function insertStaticArticle(EntityManagerInterface $entityManager)
+    public function insertArticle()
     {
 
-        // j'instancie la classe d'entité Article
-        // pour pouvoir définir les valeurs de ses propriétés (et donc créer un nouvel enregistrement
-        // dans la table article en BDD)
-        $article = new Article();
+        // je veux afficher un formulaire pour créer des articles
+        // donc je viens récupérer le gabarit de formulaire ArticleType créé en ligne de commandes
+        // en utilisant la méthode createForm de l'AbstractController (et je lui passe en parametre
+        // le gabarit de formulaire à créer)
+        $form = $this->createForm(ArticleType::class);
 
-        // Je définis les valeurs des propriétés de l'entité Article
-        // qui seront les valeurs des colonnes correspondantes en BDD
-        $article->setTitle("Titre de mon article");
-        $article->setContent("contenu de mon article");
-        $article->setImage("https://www.lapiscine.pro/wp-content/uploads/2017/05/LaPiscine_2017_BDX.jpg");
-        $article->setCreationDate(new \DateTime());
-        $article->setPublicationDate(new \DateTime());
-        $article->setIsPublished(true);
+        // je prends le gabarit de formulaire récupéré et je créé une "vue" de formulaire avec
+        // ce qui me permet de pouvoir afficher le formulaire html dans twig
+        $formView = $form->createView();
 
-        // j'utilise la méthode persist de l'EntityManager pour "pré-sauvegarder" mon entité (un peu comme un commit
-        // dans Git)
-        $entityManager->persist($article);
-
-        // j'utilise la méthode flush de l'EntityManager pour insérer en BDD toutes les entités
-        // "pré-sauvegardées" (persistées)
-        $entityManager->flush();
-
-        // j'affiche le rendu d'un fichier twig
-        return $this->render('article/insert_static.html.twig');
+        // j'envoie la vue de mon formulaire à twig
+        return $this->render('article/insert.html.twig', [
+            'formView' => $formView
+        ]);
     }
-
-
-    /**
-     * @Route("/article/update-static", name="article_modify_static")
-     *
-     * J'ai besoin de récupérer un article dans la table article donc je demande
-     * à SF d'instancier pour moi l'ArticleRepository
-     * J'ai aussi besoin de re-enregistrer cet article donc je demande à SF
-     * d'instancier L'entityManagerInterface (EntityManager)
-     */
-    public function updateStaticArticle(ArticleRepository $articleRepository, EntityManagerInterface $entityManager)
-    {
-        // je récupère l'article a modifier avec la méthode find du repository
-        // La méthode find me renvoie une entité Article qui contient toutes les données
-        // de l'article (titre, content etc)
-        $article = $articleRepository->find(1);
-
-        // Vu que j'ai récupéré une entité, je peux utiliser les setters
-        // pour modifier les valeurs que je veux modifier
-        $article->setTitle("titre modifié en dur");
-
-        // une fois que j'ai modifié mon entité Article
-        // je la re-enregistre avec l'entityManager et les méthodes
-        // persist puis flush
-        $entityManager->persist($article);
-        $entityManager->flush();
-
-        return $this->render('article/update_static.html.twig');
-    }
-
 
     /**
      * @Route("/article/delete/{id}", name="article_delete")
