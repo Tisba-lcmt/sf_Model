@@ -42,9 +42,11 @@
 
     {{ form_start(formView) }}
 
+
         <div>
             {{ form_label(formView.title) }}
             {{ form_widget(formView.title, {'attr': {'class': 'article_form_title'}}) }}
+            {{ form_errors(formView.title) }}
         </div>
 
         <div>

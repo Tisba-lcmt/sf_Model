@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9927be5a-dcd7-41c8-a0ac-4d549b70bba2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/article/admin/insert.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/admin/insert.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +167,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -203,7 +204,7 @@
       <workItem from="1606294769150" duration="9387000" />
       <workItem from="1606380078515" duration="7910000" />
       <workItem from="1606400732706" duration="2434000" />
-      <workItem from="1606482764224" duration="1885000" />
+      <workItem from="1606482764224" duration="4739000" />
     </task>
     <servers />
   </component>
@@ -243,18 +244,19 @@
     <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.626@0.23.1280.626" timestamp="1606129558119" />
     <state x="348" y="48" key="NewPhpClassDialog/0.23.1280.630@0.23.1280.630" timestamp="1606406907127" />
     <state x="487" y="64" key="NewPhpClassDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1606300972438" />
-    <state x="500" y="44" key="SettingsEditor" timestamp="1606384472225">
-      <screen x="0" y="23" width="1792" height="1017" />
+    <state x="182" y="23" key="SettingsEditor" timestamp="1606494502051">
+      <screen x="0" y="23" width="1280" height="623" />
     </state>
-    <state x="182" y="23" key="SettingsEditor/0.23.1280.623@0.23.1280.623" timestamp="1606294819992" />
+    <state x="182" y="23" key="SettingsEditor/0.23.1280.623@0.23.1280.623" timestamp="1606494502051" />
     <state x="182" y="23" key="SettingsEditor/0.23.1280.626@0.23.1280.626" timestamp="1606380499633" />
     <state x="500" y="44" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1606384472225" />
-    <state width="500" height="448" key="SwitcherDM" timestamp="1606484009627">
-      <screen x="0" y="23" width="1280" height="626" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1606493688284">
+      <screen x="0" y="23" width="1280" height="623" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.1280.623@0.23.1280.623" timestamp="1606296061468" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1280.623@0.23.1280.623" timestamp="1606493688284" />
     <state width="500" height="448" key="SwitcherDM/0.23.1280.626@0.23.1280.626" timestamp="1606484009627" />
     <state width="500" height="449" key="SwitcherDM/0.23.1280.628@0.23.1280.628" timestamp="1605793127420" />
+    <state width="700" height="728" key="SwitcherDM/0.23.1792.1017@0.23.1792.1017" timestamp="1606489467740" />
     <state x="306" y="23" width="670" height="686" key="search.everywhere.popup" timestamp="1605792785855">
       <screen x="0" y="23" width="1280" height="628" />
     </state>
