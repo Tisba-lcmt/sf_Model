@@ -15,7 +15,67 @@
             j'utilise la fonction twig form pour afficher mon formulaire
             (avec en parametre la variable de formulaire
         #}
-        {{ form(formView) }}
+        {#        {{ form(formView) }}#}
+
+{#        {{ form_start(formView) }}#}
+
+{#            <div class="article_form_title">#}
+
+{#                {{ form_row(formView.title) }}#}
+
+{#            </div>#}
+
+{#            {{ form_row(formView.content) }}#}
+
+{#            {{ form_row(formView.image) }}#}
+
+{#            {{ form_row(formView.publicationDate) }}#}
+
+{#            {{ form_row(formView.creationDate) }}#}
+
+{#            {{ form_row(formView.isPublished) }}#}
+
+{#            {{ form_row(formView.sauver) }}#}
+
+{#        {{ form_end(formView) }}#}
+
+
+    {{ form_start(formView) }}
+
+        <div>
+            {{ form_label(formView.title) }}
+            {{ form_widget(formView.title, {'attr': {'class': 'article_form_title'}}) }}
+        </div>
+
+        <div>
+            {{ form_label(formView.content) }}
+            {{ form_widget(formView.content) }}
+        </div>
+
+        <div>
+            {{ form_label(formView.image) }}
+            {{ form_widget(formView.image) }}
+        </div>
+
+        <div>
+            {{ form_label(formView.publicationDate) }}
+            {{ form_widget(formView.publicationDate) }}
+        </div>
+
+        <div>
+            {{ form_label(formView.creationDate) }}
+            {{ form_widget(formView.creationDate) }}
+        </div>
+
+        <div>
+            {{ form_label(formView.isPublished) }}
+            {{ form_widget(formView.isPublished) }}
+        </div>
+
+        <div>
+            {{ form_widget(formView.sauver) }}
+        </div>
+    {{ form_end(formView) }}
 
     </main>
 
