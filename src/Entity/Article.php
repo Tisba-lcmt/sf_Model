@@ -66,7 +66,7 @@ class Article
      *
      * grâce à la ligne de commande bin/console make:entity
      * j'ai ajouté une propriété à mon entité (donc une colonne à ma table article)
-     * Cette propriété représente une relation vers la table article
+     * Cette propriété représente une relation vers la table category
      * (donc elle cible l'entité Category)
      * C'est un ManyToOne car je veux avoir une seule catégorie par article,
      * mais (éventuellement) plusieurs articles par catégorie
