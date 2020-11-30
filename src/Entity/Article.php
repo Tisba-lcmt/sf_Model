@@ -36,6 +36,8 @@ class Article
 
     /**
      * @ORM\Column(type="text", nullable=true)
+     *
+     *
      */
     private $content;
 
@@ -58,6 +60,20 @@ class Article
      * @ORM\Column(type="boolean", nullable=true)
      */
     private $isPublished;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="articles")
+     *
+     * grâce à la ligne de commande bin/console make:entity
+     * j'ai ajouté une propriété à mon entité (donc une colonne à ma table article)
+     * Cette propriété représente une relation vers la table article
+     * (donc elle cible l'entité Category)
+     * C'est un ManyToOne car je veux avoir une seule catégorie par article,
+     * mais (éventuellement) plusieurs articles par catégorie
+     * Le inversedBy permet de savoir dans l'entité reliée (donc Category) la propriété
+     * qui re-pointe vers l'entité Article (ici c'est la propriété articles)
+     */
+    private $category;
 
     /**
      * @return mixed
@@ -162,6 +178,18 @@ class Article
     public function setIsPublished($isPublished): void
     {
         $this->isPublished = $isPublished;
+    }
+
+    public function getCategory(): ?Category
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?Category $category): self
+    {
+        $this->category = $category;
+
+        return $this;
     }
 
 
