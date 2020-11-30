@@ -28,6 +28,8 @@ class ArticleController extends AbstractController
         // de récupérer tous les éléments de la table Article
         $articles = $articleRepository->findAll();
 
+
+
         // les afficher dans un fichier twig
 
         return $this->render('article/front/list_articles.html.twig', [

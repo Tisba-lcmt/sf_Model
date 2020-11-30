@@ -75,6 +75,12 @@
         </div>
 
         <div>
+            {{ form_label(formView.category) }}
+            {{ form_widget(formView.category, {'attr': {'class': 'article_form_title'}}) }}
+            {{ form_errors(formView.category) }}
+        </div>
+
+        <div>
             {{ form_widget(formView.sauver) }}
         </div>
     {{ form_end(formView) }}
