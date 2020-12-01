@@ -1,1 +1,8 @@
 <h1>Homepage</h1>
+
+
+{% if app.user %}
+    <a href="{{ path('app_logout') }}">Déconnexion</a>
+{% else %}
+    <a href="{{ path('app_login') }}">Connexion</a>
+{% endif %}
