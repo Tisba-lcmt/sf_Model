@@ -41,10 +41,6 @@ class Article
      */
     private $content;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $image;
 
     /**
      * @ORM\Column(type="datetime", nullable=true)
@@ -60,6 +56,11 @@ class Article
      * @ORM\Column(type="boolean", nullable=true)
      */
     private $isPublished;
+
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    private $imageFileName;
 
     /**
      * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="articles")
@@ -114,22 +115,6 @@ class Article
     public function setContent($content): void
     {
         $this->content = $content;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
-
-    /**
-     * @param mixed $image
-     */
-    public function setImage($image): void
-    {
-        $this->image = $image;
     }
 
     /**
@@ -192,7 +177,21 @@ class Article
         return $this;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getImageFileName()
+    {
+        return $this->imageFileName;
+    }
 
+    /**
+     * @param mixed $imageFileName
+     */
+    public function setImageFileName($imageFileName): void
+    {
+        $this->imageFileName = $imageFileName;
+    }
 
 
 }

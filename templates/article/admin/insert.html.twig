@@ -56,12 +56,6 @@
         </div>
 
         <div>
-            {{ form_label(formView.image) }}
-            {{ form_widget(formView.image) }}
-            {{ form_errors(formView.image) }}
-        </div>
-
-        <div>
             {{ form_label(formView.publicationDate) }}
             {{ form_widget(formView.publicationDate) }}
             {{ form_errors(formView.publicationDate) }}
@@ -83,6 +77,12 @@
             {{ form_label(formView.category) }}
             {{ form_widget(formView.category, {'attr': {'class': 'article_form_title'}}) }}
             {{ form_errors(formView.category) }}
+        </div>
+
+        <div>
+            {{ form_label(formView.imageFileName) }}
+            {{ form_widget(formView.imageFileName, {'attr': {'class': 'article_form_title'}}) }}
+            {{ form_errors(formView.imageFileName) }}
         </div>
 
         <div>

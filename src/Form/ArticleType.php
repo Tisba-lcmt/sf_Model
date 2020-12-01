@@ -7,6 +7,7 @@ use App\Entity\Category;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -21,7 +22,6 @@ class ArticleType extends AbstractType
 
             ->add('title')
             ->add('content')
-            ->add('image')
             ->add('publicationDate', DateType::class, [
                 'widget' => 'single_text'
             ])
@@ -41,6 +41,10 @@ class ArticleType extends AbstractType
                 // chacune des catégories (il faut qu'elle permette à l'utilisateur
                 // d'identifer et de choisir une catégorie)
                 'choice_label' => 'title'
+            ])
+            ->add('imageFileName', FileType::class, [
+                'required' => false,
+                'mapped' => false
             ])
             ->add('isPublished')
             ->add('sauver', SubmitType::class)
