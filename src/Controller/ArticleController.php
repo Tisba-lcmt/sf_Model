@@ -17,8 +17,19 @@ class ArticleController extends AbstractController
     /**
      * @Route("/article/list", name="article_list")
      */
-    public function articleList(ArticleRepository $articleRepository)
+    public function articleList(ArticleRepository $articleRepository, Request $request)
     {
+
+        // je récupère la recherche de l'utilisateur (la valeur de l'input search envoyé en GET)
+        $search = $request->query->get('search');
+
+        if (!is_null($search)) {
+
+            // j'appelle ma requête personalisée de repository
+            $articles = $articleRepository->searchInTitle($search);
+
+            dump($articles); die;
+        }
 
         // récupérer tous les articles de ma table article
         // pour ça, j'utilise la classe générée automatiquement par SF
