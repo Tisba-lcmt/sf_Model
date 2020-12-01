@@ -52,26 +52,31 @@
         <div>
             {{ form_label(formView.content) }}
             {{ form_widget(formView.content) }}
+            {{ form_errors(formView.content) }}
         </div>
 
         <div>
             {{ form_label(formView.image) }}
             {{ form_widget(formView.image) }}
+            {{ form_errors(formView.image) }}
         </div>
 
         <div>
             {{ form_label(formView.publicationDate) }}
             {{ form_widget(formView.publicationDate) }}
+            {{ form_errors(formView.publicationDate) }}
         </div>
 
         <div>
             {{ form_label(formView.creationDate) }}
             {{ form_widget(formView.creationDate) }}
+            {{ form_errors(formView.creationDate) }}
         </div>
 
         <div>
             {{ form_label(formView.isPublished) }}
             {{ form_widget(formView.isPublished) }}
+            {{ form_errors(formView.isPublished) }}
         </div>
 
         <div>
