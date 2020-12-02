@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('/assets/dist/css/main.css') }}">
 </head>
 <body>
 
@@ -26,14 +27,17 @@
 
         <a href="{{ path('admin_article_insert') }}">créer un article</a>
 
-        {% for article in articles %}
-            <article>
-                <h2>{{ article.title }}</h2>
-                <a href="{{ path('admin_article_delete', {'id': article.id}) }}">Supprimer l'article</a>
-                <a href="{{ path('admin_article_update', {'id': article.id}) }}">Modifier l'article</a>
-            </article>
-        {% endfor %}
+        <main class="container">
 
+            {% for article in articles %}
+                <article class="col-4">
+                    <h2 class="title-article">{{ article.title }}</h2>
+                    <a href="{{ path('admin_article_delete', {'id': article.id}) }}">Supprimer l'article</a>
+                    <a href="{{ path('admin_article_update', {'id': article.id}) }}">Modifier l'article</a>
+                </article>
+            {% endfor %}
+
+        </main>
     </body>
 
 </body>

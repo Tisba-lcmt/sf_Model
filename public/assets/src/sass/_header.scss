@@ -1,0 +1,9 @@
+header {
+  background-color: $blue;
+}
+
+
+.btn-header {
+  @include button(#123984, 50px);
+}
+

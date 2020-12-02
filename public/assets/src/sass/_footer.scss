@@ -1,0 +1,7 @@
+footer {
+  background-color: $blue;
+}
+
+.btn-footer {
+  @include button(#987654, 14px);
+}

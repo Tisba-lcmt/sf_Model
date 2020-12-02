@@ -1,0 +1,8 @@
+$blue: #e0e711;
+
+@mixin button($color, $width) {
+  width: $width;
+  padding: 15px;
+  border: 1px solid black;
+  background-color: $color;
+}

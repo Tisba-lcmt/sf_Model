@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/** Fichier qui sera compilé par sass, avec la ligne de commande :
+* "sass --watch src/sass/main.scss dist/css/main.css"
+*/
+.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/** !!! ANTI PATTERN, A NE PAS UTILISER (SELON MOI, MAIS J'AI RAISON) !!! */
+body main div nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body main div nav li {
+  display: inline-block;
+}
+body main div nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+header {
+  background-color: #e0e711;
+}
+
+.btn-header {
+  width: 50px;
+  padding: 15px;
+  border: 1px solid black;
+  background-color: #123984;
+}
+
+footer {
+  background-color: #e0e711;
+}
+
+.btn-footer {
+  width: 14px;
+  padding: 15px;
+  border: 1px solid black;
+  background-color: #987654;
+}
+
+/*# sourceMappingURL=main.css.map */

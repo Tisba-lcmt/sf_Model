@@ -1,0 +1,9 @@
+/** Fichier qui sera compilé par sass, avec la ligne de commande :
+* "sass --watch src/sass/main.scss dist/css/main.css"
+*/
+
+@import 'vars';
+@import 'common';
+@import 'grid';
+@import 'header';
+@import 'footer';
